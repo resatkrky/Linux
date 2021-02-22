@@ -1,0 +1,20 @@
+date = tarihi yazar
+date +%D = sadece gün ay yıl yazar
+
+read a;echo a = alt satırda string girilir 
+daha sonra entera basılınca alt satırında yazar
+read a b c; = burada stringler sırayla a b c'ye atanır
+read a b c;echo b = bunda da b deki stringi yani 2.stringi yazar.
+
+echo $? = son komut doğru mu değil mi doğru ise 0 yazar 
+yanlış ise farklı sayı yazar
+
+expr 2+3 = işlemi toplar ve alt satırda 5 yazar
+
+expr 2 \* 3 = çarpım için özel 
+
+bc = çalıştırdıktan sonra alt alta istediğin kadar komut yazabilirsin
+
+echo "(2+3)*5" | bc = sonuç olarak 25 yazar.
+
+$ # şeklinde olursa dizinin toplam eleman sayısını verir.

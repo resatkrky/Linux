@@ -1,0 +1,44 @@
+nano d1 =dosyanın içini açar ve yazı yazmayı sağlar.
+cat d1 dosyanın içinde yazanları gösterir.
+vi var.nano'ya göre daha karışık.nano kullanmak daha faydalı.
+echo "hello word" = ekrana hello word yazar
+$var = 100 (var değişkeni 100'e setlendi)
+
+$var = 100
+echo $var = ekrana 100 yazar
+
+path=$(pwd)
+echo $path = ekrana home/Asus yazar
+
+$var = 100
+echo "\$var = $var" = ekrana $var = 100 yazar
+
+unset $var = var değişkeni serbest bırakıldı 
+
+var =$((var++)) = var iki artırıldı(aritmetik işlem için)
+
+${string:5} = ilk 5.karakterden sonuncu indise kadar
+${string:0:5} =0.indisten 5.indise
+${string:(-2)} = son 2 indis
+${#string} =stringin uzunluğunu verir
+
+a = "345"
+echo ${a:-abc} = 345 çıkar
+echo ${a:=abc} = 345 çıkar
+
+unset a
+echo ${a:=abc} = abc çıkar
+
+a=dfgh
+echo ${a:+abc} = abc çıkar
+
+unset a
+echo ${a:?abc} = hata verir
+
+a=(2 4 6 a b) = (dizi ataması)
+echo ${a} = 0.indisi verir
+echo ${a[0]} = 0.indisi verir
+echo ${a[2]} = 2.indisi verir
+a[6] = D (8.indise D'yi atar)
+echo ${#a[*]} = dizinin boyunu verir
+echo ${#a[@]} = dizinin boyunu verir

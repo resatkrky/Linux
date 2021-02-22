@@ -1,0 +1,4 @@
+sudo yum -y groups install "KDE Plasma Workspaces" = KDE kurar
+sudo yum -y groups remove "KDE Plasma Workspaces" =KDE kaldırır
+(-y = sorduğu herşeye yes der.)
+sudo link(linux linki url değil) yatığın zaman indirir hangi dizindeyse

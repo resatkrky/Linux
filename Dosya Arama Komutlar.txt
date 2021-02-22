@@ -1,0 +1,5 @@
+find / -name d1 = d1 dosyasının nerede oldugunu bulur 
+find /usr -name d1 = usr konumunda arar
+cat name | more =more adım adım bulmayı sağlar
+sudo upadetedb = günceller
+locate d1 = updatedb den sonra d1 yerini bulur

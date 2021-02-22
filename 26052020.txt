@@ -1,0 +1,23 @@
+exec 5<>zzz(zzz dosyası oluşturur)
+fcntl 5 (read write)
+
+exec 6<aaa
+fcntl 6 (read only)
+
+fork = aynı işlemi aynı anda başka bir şekilde başlatır
+buna parent-child ilişkisi denir.
+child bir program içinde başka bir program çalıştırmak için
+
+gcc -o unbuffer unbuffer.c ( unbuffer.c dosyasını derler )
+unbuffer (koşar)
+
+fprintf(stdout,"%s","GHI")
+fprintf(stderr,"%s","XYZ")
+write(2,"JKL",3)
+burada ilk önce write yazılır daha sonra stderr sonra
+stdout yazılır.
+Çünkü stdout buffera atar.(JKLXYZGHI)
+
+od -c file.hole(satırda 30 birimlik yer açar.)
+
+for i in (1..10) ; do fdshare ; done (döngü)

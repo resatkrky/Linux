@@ -1,0 +1,29 @@
+(ls) o klasörün neler var görür
+(ls --help) ls ile kullanýlan komutlarý sýralar
+(cd+KlasörAdý) o klasörün içine girer
+(cd ..) bir geri dizine gider
+(cd harf) yaptýktan sonra tab a týklarsan kendisi bulur
+(clear) ekraný temizler
+(mkdir+KlasörAdý) yeni bir klasör(dizin) açar
+yukarý ok tuþu bir önceki komuta gider
+(ctrl+c(d)) bulunduðu komutu sonlandýrýr
+(cat > file.txt(deðisebilir)) alt satýrda yazýlacaklarý file.txt ye yaz(file metin belgesi oluþturur.)
+(cat file.txt) yaparsan yazýlanlarý terminalde açar
+(gedit file.txt) yaptýðýnda o dosyayý açar
+(cat file.txt > file2.txt) yaparsan file2'nin içindekileri siler file dekileri yazar
+(cat file.txt >> file2.txt) yaparsan file2'yi silmez file içindekileri alt satýra yazar
+(Bu iþlem tekrarlanabilir.)
+(cat file.txt file2.txt > (veya >>) file3.txt) file ve file2'yi alt alta file3'e yazar
+(cat >> file.txt) file içini silmeden altýna ekleme yapar
+(rm file.txt) yazdýðýnda siler
+(cp file.txt file2.txt) yazýldýðýnda file dosyasýný file2'ye (olmayan dosyayý oluþturur)kopyalar 
+(rmdir Klasöradý) yazarsan içi boþ klasörü siler
+(rm -r KlasörAdý) yaparsan içi dolu klasörü siler
+(pwd) hangi dizinde olduðunu gösterir
+(hostname) pc nin adýný verir
+(ps) çalýþan programlarý gösterir
+(ps aux) çalýþan tüm programlarý gösterir
+
+
+müzik veya herhangi bir uygulama hangi komutla açýlýr gibi komutlar
+klasörlerin arasýnda boþluk varsa hangi komut kullanýlýr

